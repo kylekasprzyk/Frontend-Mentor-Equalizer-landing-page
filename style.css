@@ -423,7 +423,7 @@ footer a:hover {
     .cta-card p {
         font-size: var(--fs-20px);
         line-height: 2.125rem;
-        margin: 1.8125rem 0 2.625rem 0;
+        margin: 1.8125rem -0.5rem 2.625rem 0;
     }
 
     footer {
