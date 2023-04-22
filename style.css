@@ -394,7 +394,7 @@ footer a:hover {
     .hero p {
         font-size: var(--fs-20px);
         line-height: 2.125rem;
-        max-width: 51.5625rem;
+        max-width: 54rem;
     }
 
     .cta-container {
