@@ -1,0 +1,465 @@
+:root {
+    /* colors */
+    --66E2DC: 177 68% 64%;
+    --FA7453: 12 94% 65%;
+    --FFB964: 33 100% 70%;
+    --FCFAF9: 20 33% 98%;
+    --191826: 244 23% 12%;
+    --FFFFFF: 0 0% 100%;
+
+    /* font-sizes */
+    --fs-11px: .6875rem;
+    --fs-16px: 1rem;
+    --fs-18px: 1.125rem;
+    --fs-20px: 1.25rem;
+    --fs-32px: 2rem;
+    --fs-40px: 2.5rem;
+    --fs-64px: 4rem;
+    --fs-65px: 4.0625rem;
+    --fs-88px: 5.5rem;
+
+    /* font-family */
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* reset start */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-image: url(./images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0 -13.75rem;
+    background-color: hsl(var(--FCFAF9));
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    font: inherit;
+}
+
+p,
+h1,
+h2 {
+    overflow-wrap: break-word;
+}
+
+/* reset end */
+
+header {
+    margin: 2.5rem 1.5rem 4rem 1.5rem;
+}
+
+.hero {
+    margin: 0 1.5rem 4.25rem 1.5rem;
+    color: hsl(var(--191826));
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: var(--fs-40px);
+    line-height: 3rem;
+    letter-spacing: -0.0284rem;
+    margin-bottom: 1.25rem;
+}
+
+.hero p {
+    font-weight: 400;
+    font-size: var(--fs-16px);
+    line-height: 1.625rem;
+}
+
+.cta-container {
+    background: hsl(var(--191826));
+    border-radius: .75rem;
+}
+
+.mobile-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 37.5rem;
+    border-radius: .75rem;
+    margin-top: 10.375rem;
+    background-image: url(./images/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 17.5rem;
+}
+
+.mobile-image img {
+    position: absolute;
+    width: 13.0625rem;
+    margin-top: -6.125rem;
+}
+
+.cta-card {
+    background: hsl(var(--FA7453));
+    border-radius: .75rem;
+    padding: 3rem 2.25rem;
+    color: hsl(var(--FCFAF9));
+    margin-top: -13.75rem;
+}
+
+.cta-card h2 {
+    font-weight: 700;
+    font-size: var(--fs-32px);
+    line-height: 2.5rem;
+}
+
+.cta-card p {
+    margin: .75rem 0 2.25rem 0;
+    font-weight: 400;
+    font-size: var(--fs-18px);
+    line-height: 1.75rem;
+}
+
+.monthly-cost {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cta-card span {
+    font-weight: 700;
+    font-size: var(--fs-65px);
+    line-height: 3.25rem;
+}
+
+.iOS-btn {
+    width: 100%;
+    height: 3.8125rem;
+    background: hsl(var(--191826));
+    border: none;
+    border-radius: .75rem;
+    font-weight: 700;
+    font-size: var(--fs-18px);
+    line-height: 2rem;
+    letter-spacing: -0.0112rem;
+    color: hsl(var(--FCFAF9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.iOS-btn:hover {
+    cursor: pointer;
+    background: hsl(var(--66E2DC));
+}
+
+.android-btn {
+    width: 100%;
+    height: 3.8125rem;
+    background: hsl(var(--FCFAF9));
+    border: none;
+    border-radius: .75rem;
+    font-weight: 700;
+    font-size: var(--fs-18px);
+    line-height: 2rem;
+    letter-spacing: -0.0112rem;
+    color: hsl(var(--191826));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.android-btn:hover {
+    cursor: pointer;
+    background: hsl(var(--FFB964));
+}
+
+footer {
+    margin: 0 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.footer-logo {
+    margin: 4rem 0rem 2rem 0rem;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: var(--fs-16px);
+    line-height: 1.625rem;
+    color: hsl(var(--191826));
+}
+
+footer a {
+    font-weight: 700;
+    font-size: var(--fs-16px);
+    line-height: 1.625rem;
+    color: hsl(var(--191826));
+    text-decoration: none;
+}
+
+footer a:hover {
+    filter: invert(76%) sepia(85%) saturate(4338%) hue-rotate(327deg) brightness(102%) contrast(96%);
+}
+
+.social-icons {
+    display: flex;
+    margin: 4rem 0 1rem 0;
+    gap: 1.25rem;
+    height: 100%;
+}
+
+.social-icons:hover {
+    cursor: pointer;
+}
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover {
+    filter: invert(76%) sepia(85%) saturate(4338%) hue-rotate(327deg) brightness(102%) contrast(96%);
+}
+
+.attribution {
+    padding: .5rem 0;
+    text-align: start;
+    max-width: 25rem;
+    color: hsl(var(--FCFAF9));
+}
+
+.attribution p {
+    color: hsl(var(--191826));
+}
+
+@media screen and (min-width: 500px) {
+    .hero {
+        max-width: 31.25rem;
+    }
+
+    .cta-container {
+        max-width: 31.25rem;
+        margin: 1.5rem;
+    }
+
+    footer {
+        max-width: 31.25rem;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    body {
+        background-image: url(./images/bg-main-tablet.png);
+        background-position: -21.875rem -15rem;
+    }
+
+    header {
+        margin: 3.875rem 0 5.9375rem 2.5rem;
+    }
+
+    .image-top {
+        background-image: url(./images/bg-pattern-1.svg);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 35%;
+        position: absolute;
+        top: -8%;
+        right: 0;
+    }
+
+    .hero {
+        margin: 0 13.0625rem 6.9375rem 2.4375rem;
+        max-width: 31.875rem;
+    }
+
+    .hero h1 {
+        font-size: var(--fs-64px);
+        line-height: 4rem;
+        letter-spacing: -0.0455rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .hero p {
+        font-weight: 400;
+        font-size: var(--fs-18px);
+        line-height: 1.75rem;
+    }
+
+    .cta-container {
+        margin: 12.5rem 2.4375rem 0 2.0625rem;
+        max-width: 69.375rem;
+    }
+
+    .mobile-image img {
+        margin-right: 41%;
+        max-width: 16.875rem;
+    }
+
+    .cta-card {
+        max-width: 24.9375rem;
+        position: absolute;
+        z-index: 1;
+        margin-left: 30%;
+        margin-top: -25.625rem;
+    }
+
+    .cta-card h2 {
+        font-size: var(--fs-40px);
+    }
+
+    footer {
+        margin: 0 2.4375rem 0 2rem;
+        max-width: 100%;
+    }
+
+    .footer-logo {
+        margin: 11.4375rem 0 2rem 0;
+    }
+
+    .footer-contact {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+    }
+
+    .footer-text {
+        max-width: 22.875rem;
+    }
+
+    .social-icons {
+        margin: 4rem 0 1.5rem 0;
+    }
+
+    .attribution p {
+        color: hsl(var(--191826));
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    body {
+        max-width: 112.5rem;
+        margin: 0 auto;
+        background-image: url(./images/bg-main-desktop.png);
+        background-position: -21.875rem -15rem;
+        background-repeat: repeat;
+    }
+
+    header {
+        margin: 3.875rem 0 7.9375rem 10.3125rem;
+    }
+
+    .image-top {
+        width: 21.5%;
+        top: -4.5%;
+    }
+
+    .hero {
+        max-width: 68.75rem;
+        margin: 0 16.25rem 2.5rem 10.3125rem;
+    }
+
+    .hero h1 {
+        font-size: var(--fs-88px);
+        line-height: 5.5rem;
+        letter-spacing: -0.0625rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .hero p {
+        font-size: var(--fs-20px);
+        line-height: 2.125rem;
+        max-width: 51.5625rem;
+    }
+
+    .cta-container {
+        margin: 20rem auto 0 auto;
+        max-width: 69.375rem;
+    }
+
+    .mobile-image {
+        background-size: 19.5rem;
+        background-position: 42% -30%;
+    }
+
+    .mobile-image img {
+        max-width: 100%;
+        width: 19.5rem;
+        margin-top: -13.3125rem;
+    }
+
+    .cta-card {
+        max-width: 27.875rem;
+        padding: 3.625rem 3.6875rem 3rem 3.375rem;
+        margin-left: 39.5%;
+        margin-top: -31.5rem;
+    }
+
+    .cta-card p {
+        font-size: var(--fs-20px);
+        line-height: 2.125rem;
+        margin: 1.8125rem 0 2.625rem 0;
+    }
+
+    footer {
+        max-width: 69.375rem;
+        margin: 1.125rem auto;
+    }
+
+    .footer-text {
+        display: flex;
+        max-width: 100%;
+        align-items: end;
+    }
+
+    .footer-text p {
+        width: 22.875rem;
+    }
+
+    .footer-p {
+        margin: 0rem 0rem -0.75rem 8.625rem;
+    }
+
+    .social-icons {
+        margin: 4rem 0 1rem 0;
+    }
+
+    .attribution {
+        padding: 4.5rem 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .mobile-image img {
+        margin-right: 34%;
+    }
+
+    .cta-card {
+        margin-left: 30%;
+    }
+}
