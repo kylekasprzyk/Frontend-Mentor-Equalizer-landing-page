@@ -3,7 +3,7 @@
   <h2>
     <a href="https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE"><strong>Frontend Mentor Challenge</strong></a>  </h2>
     <p>
-    <a href="#">My Solution</a>
+    <a href="https://kylekasprzyk.github.io/Frontend-Mentor-Equalizer-landing-page/">My Solution</a>
   </p>
 </div>
 
@@ -36,8 +36,8 @@ This is a solution to the [Equalizer landing page challenge on Frontend Mentor](
 
 ## Links
 
-- [Solution URL](#)
-- [Live Site URL](#)
+- [Solution URL](https://www.frontendmentor.io/solutions/equalizer-landing-page-solution-WCc3vtuOlN)
+- [Live Site URL](https://kylekasprzyk.github.io/Frontend-Mentor-Equalizer-landing-page/)
 
 ## Built with
 
